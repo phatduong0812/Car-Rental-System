@@ -1,0 +1,39 @@
+﻿<Window x:Class="PRN221_A01_DuongGiaPhat.WindowCarDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN221_A01_DuongGiaPhat"
+        mc:Ignorable="d"
+        Title="WindowCarDetail" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="347"  Margin="30,65,0,10">
+            <Label Name="lbCartId" Content="Car Id" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox Name="txtCarId" HorizontalAlignment="Stretch" Height="25" VerticalContentAlignment="Center"/>
+            <Label Name="lbProductName" Content="Car Name" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtCarName" Height="25" VerticalContentAlignment="Center"/>
+            <Label Name="lbCarModelYear" Content="Car Model Year" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox Name="txtCarModelYear" HorizontalAlignment="Stretch" Height="25" VerticalContentAlignment="Center"/>
+            <Label Name="lbColor" Content="Color" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox Name="txtColor" HorizontalAlignment="Stretch" Height="25" VerticalContentAlignment="Center"/>
+            <Label Name="lbProducerId" Content="ProducerId" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <ComboBox x:Name="cmbProducerId" Height="25" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="347"  Margin="421,65,0,10">
+            <Label Name="lbCapacity" Content="Capacity" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox Name="txtCapacity" HorizontalAlignment="Stretch" Height="25" VerticalContentAlignment="Center"/>
+            <Label Name="lbDescription" Content="Description" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox Name="txtDescription" HorizontalAlignment="Stretch" Height="25" VerticalContentAlignment="Center"/>
+            <Label Name="lbRentPrice" Content="Rent Price" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox Name="txtRentPrice" HorizontalAlignment="Stretch" Height="25" VerticalContentAlignment="Center"/>
+            <Label Name="lbStatus" Content="Status" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <ComboBox x:Name="cmbSatus" Height="25" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        </StackPanel>
+        <Button Name="btnDelete" Content="Delete" Background="Transparent" BorderThickness="1px" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="574,342,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.408,-0.539"
+                 Height="30" Width="70" FontSize="14" FontWeight="Bold" Click="btnDelete_Click" />
+        <Button Name="btnConfirm" Content="Save" Background="Transparent" BorderThickness="1px" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="672,342,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.408,-0.539"
+                 Height="30" Width="70" FontSize="14" FontWeight="Bold" Click="btnConfirm_Click" />
+        <Button Name="btnClose" Content="Close" Background="Transparent" BorderThickness="1px" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="475,342,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.408,-0.539"
+                 Height="30" Width="70" FontSize="14" FontWeight="Bold" Click="btnClose_Click" />
+    </Grid>
+</Window>

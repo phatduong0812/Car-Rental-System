@@ -1,0 +1,36 @@
+﻿<Window x:Class="PRN221_A01_DuongGiaPhat.WindowStaffDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN221_A01_DuongGiaPhat"
+        mc:Ignorable="d"
+        Title="WindowStaffDetail" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid Height="434" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="368*"/>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="383*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="347"  Margin="30,65,0,10" Grid.ColumnSpan="2">
+            <Label Name="lbStaffId" Content="StaffId" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox Name="txtStaffId" HorizontalAlignment="Stretch" Height="25" VerticalContentAlignment="Center"/>
+            <Label Name="lbEmail" Content="Email" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox Name="txtEmail" HorizontalAlignment="Stretch" Height="25" VerticalContentAlignment="Center"/>
+            <Label Name="lbRole" Content="Role" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <ComboBox x:Name="cmbRole" HorizontalAlignment="Stretch" Height="25" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="347"  Margin="3,65,0,10" Grid.Column="2">
+            <Label Name="lbFullName" Content="FullName" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox Name="txtFullName" HorizontalAlignment="Stretch" Height="25" VerticalContentAlignment="Center"/>
+            <Label Name="lbPassword" Content="Password" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <PasswordBox  Name="txtPassword" HorizontalAlignment="Stretch" Height="25" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <Button Name="btnDelete" Content="Delete" Background="Transparent" BorderThickness="1px" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="365,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.408,-0.539"
+                 Height="30" Width="70" FontSize="14" FontWeight="Bold" Grid.ColumnSpan="3" Click="btnDelete_Click" />
+        <Button Name="btnConfirm" Content="Save" Background="Transparent" BorderThickness="1px" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="36,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.408,-0.539"
+                 Height="30" Width="70" FontSize="14" FontWeight="Bold" Grid.Column="2" Click="btnConfirm_Click" />
+        <Button Name="btnClose" Content="Close" Background="Transparent" BorderThickness="1px" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="276,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.408,-0.539"
+                 Height="30" Width="70" FontSize="14" FontWeight="Bold" Click="btnClose_Click" />
+    </Grid>
+</Window>
